@@ -1,0 +1,118 @@
+@font-face {
+    font-family: hellvetica;
+    src: url(HelveticaNowDisplay-Regular.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: hellvetica;
+    
+}
+
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#nav{
+    padding: 10px 30px;
+    position: absolute;
+    top: 2%;
+}
+#nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 30px;
+}
+#main>h1{
+    position: absolute;
+    top: 5%;
+    font-size: 330px;
+    font-weight: 400;
+    padding-left: 70px;
+}
+
+#btmlft{
+    width: 250px;
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
+
+}
+
+#btmlft h3{
+    font-size: 18px;
+}
+
+#btmlft p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#btmlft h4{
+    margin-top: 25px;
+    font-size: 18px;
+   
+}
+
+#bottombar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 70px;;
+    padding-left: 79px;
+    
+}
+
+#bottombar h1{
+font-size: 18px;
+margin-left: 13px;
+margin-top: 10px;
+}
+
+#bottombar a{
+    color: #000000;
+   
+    font-size: 19px;
+}
+
+#main > img{
+ position: absolute;
+
+}
+
+#main #first{
+    height: 350px;
+    top: 41%;
+    left: 65%;
+     border-radius: 7px;
+    z-index: 99;
+}
+
+#main #second{
+    height: 220px;
+    top: 68%;
+    left: 57%;
+     border-radius: 7px;
+    z-index: 98;
+}
+
+#main #third{
+    height: 220px;
+    top: 58%;
+    left: 48%;
+    border-radius: 7px;
+  
+}
