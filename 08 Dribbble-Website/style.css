@@ -1,0 +1,397 @@
+
+@font-face {
+    font-family: dribbleFont ;
+    src: url(https://cdn.dribbble.com/assets/wf-visual-sans/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
+
+@font-face {
+  font-family: hellvetica;
+  src:url(HelveticaNowDisplay-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "dribbleFont",  Helvetica;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 70px;
+  border-bottom: 1.5px solid #eee;
+
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+ 
+}
+
+
+#logo {
+  height: 38px;
+  position: relative;
+  top: -1px;       
+  cursor: pointer;
+   opacity: 100%;
+}
+
+/* Navigation links */
+.nav-left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  transition: color 0.3s;
+   opacity: 80%;
+  
+}
+
+
+
+.nav-left a:hover {
+   color: #837f80;
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+
+.nav-right a {
+  text-decoration: none;
+   opacity: 90%;
+   font-size: 14px;
+ 
+}
+
+.login {
+  background-color: #000000;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.signup:hover {
+  color: #837f80;
+}
+
+/* Login link */
+.signup {
+  color: #000;
+}
+
+/*   H E R O */
+.hero{
+   display: flex;
+    width: 80%;
+    padding: 20px 100px;
+  
+
+}
+
+.hero .hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.hero .hero-left h1{
+    font-size: 50px;
+}
+
+.hero .hero-left p{
+  width: 80%;
+   opacity: 76%;
+   margin-bottom: 10px;
+}
+
+.hero .hero-left .services-swap{
+    display: flex;
+    gap: 20px;
+  
+    
+}
+
+.hero .hero-left .services-swap .shots{
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  
+ 
+}
+
+.shots h4{
+   font-weight: 400;
+}
+
+.hero .hero-left .services-swap .designers{
+ 
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 10px 20px;
+   display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.designers h4{
+   font-weight: 400;
+}
+
+.hero .hero-left .services-swap .services{
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 10px 20px;
+   display: flex;
+  gap: 5px;
+  align-items: center;
+
+}
+
+.services h4{
+   font-weight: 400;
+}
+.search{
+  display: flex;
+  position: relative;  /* 👈 ye add karo parent mein */
+}
+
+.searchbox{
+  width: 600px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #e4e4e4;
+  border: none;
+  padding: 10px 50px 10px 20px;  /* 👈 right padding badha di taaki text icon ke neeche na aaye */
+}
+
+.search i {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: #EA4C89;
+  border-radius: 100%;
+  position: absolute;
+  right: 5px;           /* 👈 ye add karo */
+  top: 50%;             /* 👈 ye add karo */
+  transform: translateY(-50%);  /* 👈 perfect vertical center ke liye */
+  padding: 12px;        /* 👈 icon ke around space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;          /* 👈 circular button ka width */
+  height: 40px;         /* 👈 circular button ka height */
+  transition: background-color 0.3s;  /* 👈 smooth hover effect */
+}
+
+.search i:hover {
+  background-color: #d43f73;  /* 👈 hover pe thoda dark */
+}
+    .search-options{
+      display: flex;
+      gap: 20px;
+      font-size: 12px;
+      opacity: 70%;
+    }
+
+    .search-options>.popular{
+     opacity: 100%;
+     font-size: 15px;
+     background: none;
+
+    }
+
+    .search-options>h4{
+      background-color: rgb(222, 222, 222);
+      padding: 3px 9px;
+      border-radius: 15px;
+      
+    }
+
+    video {
+  width: 620px;        /* 👈 full width (ya fix px me bhi de sakta hai) */
+  height: 460px;       /* aspect ratio maintain karta hai */
+  border-radius: 20px;/* 👈 rounded corners */
+  object-fit: cover;  /* crop + fill nicely */
+  display: block;  
+  margin-left: 100px; 
+  ;  /* remove inline spacing */
+}
+
+.buttonDiv{
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  padding: 20px 100px;
+  align-items: center;
+  position: relative;
+   bottom: 40px;
+  
+}
+
+.buttonDiv p{
+ font-weight: 200;
+ font-family: "hellvetica";
+}
+
+.buttonDiv button{
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(161, 161, 161);
+}
+
+.buttonDiv button i{
+  color:#9044fa;
+}
+
+.shots-section{
+  display: flex;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+ 
+}
+
+.shots-section .popular{
+ border: 1px solid rgb(200, 200, 200);
+  padding: 10px 20px;
+  border-radius: 15px;
+  opacity: 80%;
+ 
+}
+
+.shots-section .middle{
+  display: flex;
+  gap: 35px;
+   opacity: 80%;
+}
+
+.shots-section .filter{
+ border: 1px solid rgb(200, 200, 200);
+  padding: 10px 20px;
+  border-radius: 15px;
+  opacity: 80%;
+
+ 
+}
+
+.shot-section-data{
+  
+    padding: 20px 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.shot-section-data .box1{
+ 
+  
+}
+
+.shot-section-data .box1 img{
+object-fit: cover;
+height: 300px;
+width: 320px;
+
+}
+
+.shot-section-data .box2{
+  height: 300px;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.shot-section-data .box2 img{
+
+height: 300px;
+width: 320px;
+}
+
+
+.shot-section-data .box3{
+  height: 300px;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.shot-section-data .box3 img{
+object-fit: cover;
+height: 300px;
+width: 320px;
+overflow: hidden;
+}
+
+
+.shot-section-data .box4{
+  height: 300px;
+  width: 320px;
+overflow: hidden;
+  border-radius: 15px;
+}
+
+.shot-section-data .box4 img{
+height: 300px;
+width: 320px;
+}
+
+
+.box1effect{
+ height: 300px;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.effect{
+  height: 50px;
+  width: 309px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+ 
+
+}
+
+.effect>h1{
+   font-size: 20px;
+  
+}
+
+.box1effect:hover .effect{
+
+   position: relative;
+  bottom: 50px;
+  background: linear-gradient(transparent, rgba(63, 63, 63, 0.5));
+
+
+}
