@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    .sections{
+         flex-grow: 1;
+        border: 2px solid rgb(255, 255, 255);
+        background-size: cover;
+        background-position: center;
+        transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+    }
+
+    .sections:hover{
+        flex-grow: 2;
+    }
+
+    .sections:nth-child(1){
+        background-image: url(./J\ Cole\ The\ Off-Season\ Phone\ Wallpaper.jpg);
+    }
+
+    .sections:nth-child(2){
+        background-image: url(./kendrick.jpg);
+    }
+
+    .sections:nth-child(3){
+        background-image: url(./Travis\ Scott.jpg);
+    }
+
+    .sections:nth-child(4){
+        background-image: url(./xxxtentiation.jpg);
+    }
+
+    .sections:nth-child(5){
+        background-image: url(./weekend.jpg);
+    }
+}
